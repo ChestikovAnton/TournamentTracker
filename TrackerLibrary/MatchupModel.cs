@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Матч в турнире
+    /// </summary>
     public class MatchupModel
     {
+        /// <summary>
+        /// Список участников матча
+        /// </summary>
         public List<MatchupEntryModel> Entries { get; set; } = new List<MatchupEntryModel>();
+        
+        /// <summary>
+        /// Победитель матча
+        /// </summary>
         public TeamModel Winner { get; set; }
-        public int MatchupRounds { get; set; }
+
+        /// <summary>
+        /// Стадия турнира, в которой был проведен матч
+        /// </summary>
+        public int MatchupRound { get; set; }
     }
 }
