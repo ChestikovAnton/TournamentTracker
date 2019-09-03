@@ -9,17 +9,17 @@ namespace TrackerLibrary
     public class MatchupEntryModel
     {
         /// <summary>
-        /// Represents one team in the matchup.
+        /// Одна команда-участник в матче.
         /// </summary>
         public TeamModel TeamCompeting { get; set; }
 
         /// <summary>
-        /// Represents the score for this particular team.
+        /// Очки для данной команды.
         /// </summary>
         public double Score { get; set; }
 
         /// <summary>
-        /// Represents the matchup that this team came from as the winner
+        /// Предыдущий матч, в котором победила данная команда.
         /// </summary>
         public MatchupModel ParentMatchup { get; set; }
     }
