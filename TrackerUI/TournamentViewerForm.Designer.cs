@@ -120,6 +120,7 @@
             // 
             // teamOneScoreValue
             // 
+            this.teamOneScoreValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teamOneScoreValue.Location = new System.Drawing.Point(507, 192);
             this.teamOneScoreValue.Name = "teamOneScoreValue";
             this.teamOneScoreValue.Size = new System.Drawing.Size(100, 35);
@@ -145,6 +146,7 @@
             // 
             // teamTwoScoreValue
             // 
+            this.teamTwoScoreValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teamTwoScoreValue.Location = new System.Drawing.Point(507, 308);
             this.teamTwoScoreValue.Name = "teamTwoScoreValue";
             this.teamTwoScoreValue.Size = new System.Drawing.Size(100, 35);
