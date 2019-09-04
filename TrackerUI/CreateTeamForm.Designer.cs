@@ -34,7 +34,7 @@
             this.addMemberButton = new System.Windows.Forms.Button();
             this.selectTeamMemberDropDown = new System.Windows.Forms.ComboBox();
             this.selectTeamMemberLabel = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.createMemberGroupBox = new System.Windows.Forms.GroupBox();
             this.firstNameValue = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.lastNameLabel = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.teamMembersListBox = new System.Windows.Forms.ListBox();
             this.teamMembersLabel = new System.Windows.Forms.Label();
             this.createTeamButton = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.createMemberGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // teamNameValue
@@ -107,23 +107,23 @@
             this.selectTeamMemberLabel.TabIndex = 15;
             this.selectTeamMemberLabel.Text = "Выбор участника";
             // 
-            // groupBox1
+            // createMemberGroupBox
             // 
-            this.groupBox1.Controls.Add(this.createMemberButton);
-            this.groupBox1.Controls.Add(this.cellphoneValue);
-            this.groupBox1.Controls.Add(this.cellphoneLabel);
-            this.groupBox1.Controls.Add(this.emailValue);
-            this.groupBox1.Controls.Add(this.emailLabel);
-            this.groupBox1.Controls.Add(this.lastNameValue);
-            this.groupBox1.Controls.Add(this.lastNameLabel);
-            this.groupBox1.Controls.Add(this.firstNameValue);
-            this.groupBox1.Controls.Add(this.firstNameLabel);
-            this.groupBox1.Location = new System.Drawing.Point(36, 332);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(377, 271);
-            this.groupBox1.TabIndex = 18;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Создание нового участника";
+            this.createMemberGroupBox.Controls.Add(this.createMemberButton);
+            this.createMemberGroupBox.Controls.Add(this.cellphoneValue);
+            this.createMemberGroupBox.Controls.Add(this.cellphoneLabel);
+            this.createMemberGroupBox.Controls.Add(this.emailValue);
+            this.createMemberGroupBox.Controls.Add(this.emailLabel);
+            this.createMemberGroupBox.Controls.Add(this.lastNameValue);
+            this.createMemberGroupBox.Controls.Add(this.lastNameLabel);
+            this.createMemberGroupBox.Controls.Add(this.firstNameValue);
+            this.createMemberGroupBox.Controls.Add(this.firstNameLabel);
+            this.createMemberGroupBox.Location = new System.Drawing.Point(36, 332);
+            this.createMemberGroupBox.Name = "createMemberGroupBox";
+            this.createMemberGroupBox.Size = new System.Drawing.Size(377, 271);
+            this.createMemberGroupBox.TabIndex = 18;
+            this.createMemberGroupBox.TabStop = false;
+            this.createMemberGroupBox.Text = "Создание нового участника";
             // 
             // firstNameValue
             // 
@@ -261,7 +261,7 @@
             this.Controls.Add(this.deleteSelectedTeamMemberButton);
             this.Controls.Add(this.teamMembersListBox);
             this.Controls.Add(this.teamMembersLabel);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.createMemberGroupBox);
             this.Controls.Add(this.addMemberButton);
             this.Controls.Add(this.selectTeamMemberDropDown);
             this.Controls.Add(this.selectTeamMemberLabel);
@@ -272,8 +272,8 @@
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "CreateTeamForm";
             this.Text = "Создание команды";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.createMemberGroupBox.ResumeLayout(false);
+            this.createMemberGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,7 +287,7 @@
         private System.Windows.Forms.Button addMemberButton;
         private System.Windows.Forms.ComboBox selectTeamMemberDropDown;
         private System.Windows.Forms.Label selectTeamMemberLabel;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox createMemberGroupBox;
         private System.Windows.Forms.TextBox cellphoneValue;
         private System.Windows.Forms.Label cellphoneLabel;
         private System.Windows.Forms.TextBox emailValue;
