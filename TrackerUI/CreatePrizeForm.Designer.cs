@@ -64,6 +64,7 @@
             this.createPrizeButton.TabIndex = 24;
             this.createPrizeButton.Text = "Создать призовое место";
             this.createPrizeButton.UseVisualStyleBackColor = true;
+            this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
             // 
             // placeNameValue
             // 
@@ -72,6 +73,7 @@
             this.placeNameValue.Name = "placeNameValue";
             this.placeNameValue.Size = new System.Drawing.Size(207, 35);
             this.placeNameValue.TabIndex = 22;
+            this.placeNameValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // placeNameLabel
             // 
@@ -89,6 +91,7 @@
             this.placeNumberValue.Name = "placeNumberValue";
             this.placeNumberValue.Size = new System.Drawing.Size(207, 35);
             this.placeNumberValue.TabIndex = 23;
+            this.placeNumberValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // placeNumberLabel
             // 
@@ -129,6 +132,8 @@
             this.prizePercentageValue.Name = "prizePercentageValue";
             this.prizePercentageValue.Size = new System.Drawing.Size(222, 35);
             this.prizePercentageValue.TabIndex = 8;
+            this.prizePercentageValue.Text = "0";
+            this.prizePercentageValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // prizePercentageLabel
             // 
@@ -146,6 +151,8 @@
             this.prizeAmountValue.Name = "prizeAmountValue";
             this.prizeAmountValue.Size = new System.Drawing.Size(222, 35);
             this.prizeAmountValue.TabIndex = 8;
+            this.prizeAmountValue.Text = "0";
+            this.prizeAmountValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // prizeAmountLabel
             // 
