@@ -30,11 +30,8 @@ namespace TrackerUI
                     prizeAmountValue.Text, 
                     prizePercentageValue.Text);
 
-                foreach (var Connection in GlobalConfig.Connections)
-                {
-                    Connection.CreatePrize(model);
-                }
-
+                GlobalConfig.Connection.CreatePrize(model);
+                
                 placeNumberValue.Text = "";
                 placeNameValue.Text = "";
                 prizeAmountValue.Text = "0";
