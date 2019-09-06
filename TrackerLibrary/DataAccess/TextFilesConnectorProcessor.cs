@@ -50,5 +50,16 @@ namespace TrackerLibrary.DataAccess.TextFilesHelpers
 
             return prizes;
         }
+
+        public static void SaveToPrizeFile(this List<PrizeModel> prizes, string fileName)
+        {
+            List<string> lines = new List<string>();
+            foreach (var prize in prizes)
+            {
+                lines.Add($"{ prize.Id }, { prize.PlaceNumber }, { prize.PlaceName }, { prize.PrizeAmount }, { prize.PrizePercentage }");
+            }
+
+            File.WriteAllLines(fileName.GetFullFilePath(), lines);
+        }
     }
 }
